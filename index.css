@@ -33,3 +33,7 @@ body {
 .codes {
     display: flex;
 }
+
+.codes div input {
+    background-color: white;
+}
