@@ -1,9 +1,56 @@
 <html>
-    <head>
-        <title>Desafio Ycoders 1</title>
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-        <script src="./index.js"></script>
-    </body>
+
+<head>
+    <title>Desafio Ycoders 1</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="instructivo">
+        <div class="titulo">
+            <h1>Adivina el color</h1>
+            <h2>Creado para el reto de programacion Ycoders</h2>
+            <h3>creado por cnlund</h3>
+        </div>
+        <div class="mostrador" id="randcolor"></div>
+        <div class="datos">
+            <div class="instrucciones">
+                <h2>Bienvenido a adivina el color, en la parte superior de la pantalla se muestra un color, tu tarea es
+                    adivinar cual es su codigo de color en el sistema RGB</h2>
+                <h2>El objetivo es sacar el mayor numero posible en el porcentaje de coincidencia</h2>
+            </div>
+            <div class="resultados">
+                <div class="color_enviado">
+                    <h1>Este es el color elegido: </h1>
+                    <div class="color_eleg" id="coloreleg"></div>
+                </div>
+                <div class="coincidencia">
+                    <h1>Porcentaje de coincidencia: </h1>
+                    <h1 id="result"></h1>
+                </div>
+                <button id="change">Cambiar color</button>
+            </div>
+        </div>
+    </div>
+    <div class="ingreso_color">
+        <h1>Codigo de color RGB</h1>
+        <div class="codes">
+            <div class="code_red">
+                <h2>Red</h2>
+                <input id="rojo" type="number">
+            </div>
+            <div class="code_green">
+                <h2>Green</h2>
+                <input id="verde" type="number">
+            </div>
+            <div class="code_blue">
+                <h2>Blue</h2>
+                <input id="azul" type="number">
+            </div>
+            <button id="enviar">Comparar</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
 </html>
